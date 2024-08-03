@@ -7,6 +7,7 @@ metadata:
   stack: stack-aquecimento@4.0.4
 spec:
   type: infra
+  infra-id: 01J4CYQNEEQY3QT9PDSPT2B2TY
   plugins:
     - name: studio-jcgs/stack-aquecimento@4.0.4/plug-infra-generates-sns@1.0.0
       alias: plug-infra-generates-sns-1722716742005
