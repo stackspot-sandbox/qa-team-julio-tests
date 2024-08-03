@@ -1,0 +1,32 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: infra-test-v3-03-08-24-17h40
+  description: testes
+  stack-version-id: 01J4CYRKY3FKN8514Q8CXCXS0V
+  stack: stack-test-v3@2.0.5
+spec:
+  type: infra
+  plugins:
+    - name: studio-jcgs/stack-test-v3@2.0.5/plug-infra-requires-and-generetes-sns-v3@0.0.1
+      alias: plug-infra-requires-and-generetes-sns-v3-1722717669821
+      plugin-version-id: 01J4CYXRDHNJTZSCY7ZDHF3M6J
+      stack-version-id: 01J4CYRKY3FKN8514Q8CXCXS0V
+      type: infra
+      inputs:
+        required-sns-alias:
+          stk-type: required-connection
+          selected: snsconjulio21
+          type: aws-sns-conn
+        topic1_name: topicdefaultjulio3ago24
+        resource: Client
+        method: GET
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/stackspot-sandbox/qa-team-julio-tests

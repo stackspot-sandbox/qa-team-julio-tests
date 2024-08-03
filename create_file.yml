@@ -1,0 +1,20 @@
+kind: shared-infrastructure
+metadata:
+  description: testes
+  name: infra-test-v3-03-08-24-17h40
+schema-version: v1
+spec:
+  applied-plugins:
+  - alias: plug-infra-requires-and-generetes-sns-v3-1722717669821
+    connections:
+      generates: []
+      requires: []
+    inputs:
+      method: GET
+      required-sns-alias: snsconjulio21
+      resource: Client
+      topic1_name: topicdefaultjulio3ago24
+    inputs-envs: {}
+    name: studio-jcgs/stack-test-v3@2.0.5/plug-infra-requires-and-generetes-sns-v3
+  repository: https://github.com/stackspot-sandbox/qa-team-julio-tests
+  stack-qualifier: studio-jcgs/stack-test-v3@2.0.5
