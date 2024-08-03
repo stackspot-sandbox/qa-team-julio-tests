@@ -1,0 +1,31 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: infra-ju-3ago24
+  description: lalala
+  stack-version-id: 01J4D5Y66MDSD0G9KNX3EB2Y05
+  stack: stack-test-v3@2.0.8
+spec:
+  type: infra
+  plugins:
+    - name: studio-jcgs/stack-test-v3@2.0.8/plug-infra-requires-sns-v3@0.0.1
+      alias: plug-infra-requires-sns-v3-1722724484343
+      plugin-version-id: 01J4CX9CZJ9F6B72WHKHH36QAV
+      stack-version-id: 01J4D5Y66MDSD0G9KNX3EB2Y05
+      type: infra
+      inputs:
+        required-sns-alias:
+          stk-type: required-connection
+          selected: snsconjulio21
+          type: aws-sns-conn
+        resource: Client
+        method: GET
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/stackspot-sandbox/qa-team-julio-tests
