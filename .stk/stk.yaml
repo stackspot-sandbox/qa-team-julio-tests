@@ -7,6 +7,7 @@ metadata:
   stack: stack-test-v3@2.0.5
 spec:
   type: infra
+  infra-id: 01J4CZNVQE0H1SWXHVQ0MJ3FHC
   plugins:
     - name: studio-jcgs/stack-test-v3@2.0.5/plug-infra-requires-and-generetes-sns-v3@0.0.1
       alias: plug-infra-requires-and-generetes-sns-v3-1722717669821
