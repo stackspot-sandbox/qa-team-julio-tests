@@ -1,0 +1,20 @@
+kind: shared-infrastructure
+metadata:
+  description: teste
+  name: infra-test-v3-03-08-24-17h01-funcionar
+schema-version: v1
+spec:
+  applied-plugins:
+  - alias: plug-infra-generates-sns-1722716742005
+    connections:
+      generates:
+      - alias: sns-generate-alias-1
+        selected: aaaaajulio-sns
+        type: aws-sns-conn
+      requires: []
+    inputs:
+      topic1_name: topicdefault
+    inputs-envs: {}
+    name: studio-jcgs/stack-aquecimento@4.0.4/plug-infra-generates-sns
+  repository: https://github.com/stackspot-sandbox/qa-team-julio-tests
+  stack-qualifier: studio-jcgs/stack-aquecimento@4.0.4

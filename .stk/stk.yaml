@@ -1,0 +1,29 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: infra-test-v3-03-08-24-17h01-funcionar
+  description: teste
+  stack-version-id: 01HZM95N9075N21TZXWEV9XRQ8
+  stack: stack-aquecimento@4.0.4
+spec:
+  type: infra
+  plugins:
+    - name: studio-jcgs/stack-aquecimento@4.0.4/plug-infra-generates-sns@1.0.0
+      alias: plug-infra-generates-sns-1722716742005
+      plugin-version-id: 01HGBR4JTVF9X119H7J3MGHQDH
+      stack-version-id: 01HZM95N9075N21TZXWEV9XRQ8
+      type: infra
+      inputs:
+        topic1_name: topicdefault
+      inputs-envs: {}
+      connections:
+        generates:
+          - type: aws-sns-conn
+            selected: aaaaajulio-sns
+            alias: sns-generate-alias-1
+        requires: []
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/stackspot-sandbox/qa-team-julio-tests
