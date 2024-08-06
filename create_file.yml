@@ -1,0 +1,32 @@
+kind: shared-infrastructure
+metadata:
+  description: testes
+  name: infra-6ago-sns-v2-ju
+schema-version: v1
+spec:
+  applied-plugins:
+  - alias: plug-infra-generates-sns-1722971913088
+    connections:
+      generates:
+      - alias: sns-generate-alias-1
+        selected: aaaaju6agov2
+        type: aws-sns-conn
+      requires: []
+    inputs:
+      topic1_name: topicdefault
+    inputs-envs: {}
+    name: studio-jcgs/stack-plug-infra-sns@2.1.0/plug-infra-generates-sns
+  - alias: plug-infra-requires-sns-1722971913093
+    connections:
+      generates: []
+      requires:
+      - alias: sns-require-alias-1
+        selected: aaaaju6agov2
+        type: aws-sns-conn
+    inputs:
+      method: GET
+      resource: Client
+    inputs-envs: {}
+    name: studio-jcgs/stack-plug-infra-sns@2.1.0/plug-infra-requires-sns
+  repository: https://github.com/stackspot-sandbox/qa-team-julio-tests
+  stack-qualifier: studio-jcgs/stack-plug-infra-sns@2.1.0

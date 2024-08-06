@@ -1,0 +1,46 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: infra-6ago-sns-v2-ju
+  description: testes
+  stack-version-id: 01J42JWH9GFF6WE6RHV3F0JNPV
+  stack: stack-plug-infra-sns@2.1.0
+spec:
+  type: infra
+  plugins:
+    - name: studio-jcgs/stack-plug-infra-sns@2.1.0/plug-infra-generates-sns@2.0.0
+      alias: plug-infra-generates-sns-1722971913088
+      plugin-version-id: 01J0P53QXEXGNF05GCTZQKG6WF
+      stack-version-id: 01J42JWH9GFF6WE6RHV3F0JNPV
+      type: infra
+      inputs:
+        topic1_name: topicdefault
+      inputs-envs: {}
+      connections:
+        generates:
+          - type: aws-sns-conn
+            selected: aaaaju6agov2
+            alias: sns-generate-alias-1
+        requires: []
+      links:
+        generates: []
+    - name: studio-jcgs/stack-plug-infra-sns@2.1.0/plug-infra-requires-sns@0.0.3
+      alias: plug-infra-requires-sns-1722971913093
+      plugin-version-id: 01HZSD82Y319K1ZZJVDZ748JZC
+      stack-version-id: 01J42JWH9GFF6WE6RHV3F0JNPV
+      type: infra
+      inputs:
+        resource: Client
+        method: GET
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires:
+          - type: aws-sns-conn
+            selected: aaaaju6agov2
+            alias: sns-require-alias-1
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/stackspot-sandbox/qa-team-julio-tests
