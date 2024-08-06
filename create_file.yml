@@ -1,0 +1,32 @@
+kind: shared-infrastructure
+metadata:
+  description: tetes
+  name: infra-v3-gen-req-snsj6ago24
+schema-version: v1
+spec:
+  applied-plugins:
+  - alias: plug-infra-requires-sns-v3-1722972534731
+    connections:
+      generates: []
+      requires: []
+    inputs:
+      method: GET
+      required-sns-alias: aaajulio6agov3
+      resource: Client
+    inputs-envs: {}
+    name: studio-jcgs/stack-test-v3@2.0.13/plug-infra-requires-sns-v3
+  - alias: plug-infra-generetes-sns-v3-1722972554214
+    connections:
+      generates:
+      - alias: sns-generate-alias-1
+        selected: aaajulio6agov3
+        type: aws-sns-conn
+      requires: []
+    inputs:
+      method: GET
+      resource: Client
+      topic1_name: topicdefault
+    inputs-envs: {}
+    name: studio-jcgs/stack-test-v3@2.0.13/plug-infra-generetes-sns-v3
+  repository: https://github.com/stackspot-sandbox/qa-team-julio-tests
+  stack-qualifier: studio-jcgs/stack-test-v3@2.0.13
