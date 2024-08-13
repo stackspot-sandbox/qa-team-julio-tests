@@ -1,0 +1,49 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: infra716ju13ago24
+  description: testes
+  stack-version-id: 01J5454ZRYCH8TR7A6Y7VFBTKB
+  stack: stack-test-v3@2.1.16
+spec:
+  type: infra
+  plugins:
+    - name: studio-jcgs/stack-test-v3@2.1.16/plug-infra-generetes-sns-v3@1.0.0
+      alias: plug-infra-generetes-sns-v3-1723559333289
+      plugin-version-id: 01J4H7WZF2JNG3MXMY92MNAXBK
+      stack-version-id: 01J5454ZRYCH8TR7A6Y7VFBTKB
+      type: infra
+      inputs:
+        topic1_name: topicdefault
+        resource: Client
+        method: GET
+      inputs-envs: {}
+      connections:
+        generates:
+          - type: aws-sns-conn
+            selected: aaaaaaajulio
+            alias: sns-generate-alias-1
+        requires: []
+      links:
+        generates: []
+    - name: studio-jcgs/stack-test-v3@2.1.16/plug-infra-requires-n-sns-v3@2.0.0
+      alias: plug-infra-requires-n-sns-v3-1723559136981
+      plugin-version-id: 01J4M8RKGS0GRZS7QR4GAE6PA9
+      stack-version-id: 01J5454ZRYCH8TR7A6Y7VFBTKB
+      type: infra
+      inputs:
+        required_connections_list_input:
+          - stk-type: required-connection
+            selected: aaaaaaajulio
+            type: aws-sns-conn
+        resource: Client
+        method: GET
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/stackspot-sandbox/qa-team-julio-tests
