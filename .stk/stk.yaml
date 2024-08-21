@@ -1,0 +1,41 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: infra-ju-21ago24vni
+  description: testes
+  starter: studio-jcgs/stack-test-v3@3.0.1/starter-app
+  stack-version-id: 01J5TS1JWA9E2VVPCYEG72FCH6
+  stack: stack-test-v3@3.0.1
+spec:
+  type: app
+  plugins:
+    - name: studio-jcgs/stack-test-v3@3.0.1/plug-pass-test@0.0.4
+      alias: plug-pass-test-1724260325109
+      plugin-version-id: 01J5TS2MDQ39F8CKN4R0KEPBRT
+      stack-version-id: 01J5TS1JWA9E2VVPCYEG72FCH6
+      type: app
+      inputs:
+        password_field: '***'
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+    - name: studio-jcgs/stack-test-v3@3.0.1/plug-pass-test-new-inputs@0.0.1
+      alias: plug-pass-test-new-inputs-1724260350924
+      plugin-version-id: 01J5TGGW0M9ASGDNCFNF3WT6B3
+      stack-version-id: 01J5TS1JWA9E2VVPCYEG72FCH6
+      type: app
+      inputs:
+        object_with_pass:
+          password_field_from_object: senhaobjeto
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/stackspot-sandbox/qa-team-julio-tests
