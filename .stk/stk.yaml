@@ -1,0 +1,27 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: app-test-ju21ago-ac1
+  description: testes
+  starter: studio-jcgs/stack-test-v3@3.0.2/starter-app
+  stack-version-id: 01J5V2JP55Z36NQHGC0CJV70KC
+  stack: stack-test-v3@3.0.2
+spec:
+  type: app
+  plugins:
+    - name: studio-jcgs/stack-test-v3@3.0.2/plug-pass-test@0.0.4
+      alias: plug-pass-test-1724265589748
+      plugin-version-id: 01J5TS2MDQ39F8CKN4R0KEPBRT
+      stack-version-id: 01J5V2JP55Z36NQHGC0CJV70KC
+      type: app
+      inputs:
+        password_field: '***'
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/stackspot-sandbox/qa-team-julio-tests
