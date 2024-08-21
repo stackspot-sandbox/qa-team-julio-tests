@@ -7,6 +7,7 @@ metadata:
   stack: stack-test-v3@3.0.0
 spec:
   type: infra
+  infra-id: 01J5TMRJQC0XRHQYWVVWGK0T4F
   plugins:
     - name: studio-jcgs/stack-test-v3@3.0.0/plug-pass-i@0.0.1
       alias: plug-pass-i-1724249743444
