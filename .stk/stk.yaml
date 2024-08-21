@@ -8,6 +8,7 @@ metadata:
   stack: stack-test-v3@3.0.2
 spec:
   type: app
+  app-id: 01J5V4VWJYJQK7NF1DPCQC0BPG
   plugins:
     - name: studio-jcgs/stack-test-v3@3.0.2/plug-pass-test@0.0.4
       alias: plug-pass-test-1724266676558
