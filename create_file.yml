@@ -1,0 +1,18 @@
+kind: shared-infrastructure
+metadata:
+  description: teste pass
+  name: infra-ju-21ago24
+schema-version: v1
+spec:
+  applied-plugins:
+  - alias: plug-pass-i-1724249743444
+    connections:
+      generates: []
+      requires: []
+    inputs:
+      aliajusnsco: aliasjuliosns
+      password_field: MDFKNVRNUkg0MUZSOUtZTlk0VzNCMDhWRER8SkI2UWpYS1NLcnU0V0ZNNEZZRGlMTDYwS2J4c094SXpWZmlaLzVlSzBYST0=
+    inputs-envs: {}
+    name: studio-jcgs/stack-test-v3@3.0.0/plug-pass-i
+  repository: https://github.com/stackspot-sandbox/qa-team-julio-tests
+  stack-qualifier: studio-jcgs/stack-test-v3@3.0.0

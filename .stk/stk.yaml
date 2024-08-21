@@ -1,0 +1,30 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: infra-ju-21ago24
+  description: teste pass
+  stack-version-id: 01J5TGJMY0R0MR11BHRFX0EC9M
+  stack: stack-test-v3@3.0.0
+spec:
+  type: infra
+  plugins:
+    - name: studio-jcgs/stack-test-v3@3.0.0/plug-pass-i@0.0.1
+      alias: plug-pass-i-1724249743444
+      plugin-version-id: 01J5TKEF46AM9GPW828AVPPSM2
+      stack-version-id: 01J5TGJMY0R0MR11BHRFX0EC9M
+      type: infra
+      inputs:
+        password_field: '***'
+        aliajusnsco:
+          stk-type: required-connection
+          selected: aliasjuliosns
+          type: aws-sns-conn
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/stackspot-sandbox/qa-team-julio-tests
