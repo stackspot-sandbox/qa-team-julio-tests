@@ -1,0 +1,25 @@
+kind: application
+metadata:
+  description: teste
+  name: app-test-ju22ago-ac123
+schema-version: v1
+spec:
+  applied-plugins:
+  - alias: plug-pass-test-1724333865200
+    connections:
+      generates: []
+      requires: []
+    inputs:
+      password_field: MDFKNVg0WjlZOUI5WjRaU1RINlpIS0hOQzB8MStrdW80Y2tuVUNXWEkrTmFuNU5sa1hJZzNXWDBMQWVBUDJVc1VCU21MUT0=
+    inputs-envs: {}
+    name: studio-jcgs/stack-test-v3@3.0.5/plug-pass-test
+  - alias: plug-pass-test-new-inputs-1724333889523
+    connections:
+      generates: []
+      requires: []
+    inputs:
+      object_with_pass:
+        password_field_from_object: MDFKNVg0WkExU0FNM01UVEZSQ1ZNVk1SVld8M2NnaTBaRk1RT1FvOGFIVktidXAwUT09
+    inputs-envs: {}
+    name: studio-jcgs/stack-test-v3@3.0.5/plug-pass-test-new-inputs
+  repository: https://github.com/stackspot-sandbox/qa-team-julio-tests
