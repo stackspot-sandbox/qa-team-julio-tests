@@ -1,0 +1,27 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: aplic-ju-22ago-hook
+  description: testes
+  starter: studio-jcgs/stack-test-v3@3.0.3/starter-hook
+  stack-version-id: 01J5V4MDA5R3MZX9JEABA0M9ZK
+  stack: stack-test-v3@3.0.3
+spec:
+  type: app
+  plugins:
+    - name: studio-jcgs/stack-test-v3@3.0.3/plug-pass-test-hook@0.0.1
+      alias: plug-pass-test-hook-1724329673385
+      plugin-version-id: 01J5TQP48DG1XREMP61PXK1APK
+      stack-version-id: 01J5V4MDA5R3MZX9JEABA0M9ZK
+      type: app
+      inputs:
+        password_field: '***'
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/stackspot-sandbox/qa-team-julio-tests
