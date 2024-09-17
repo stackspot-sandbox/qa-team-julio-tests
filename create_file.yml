@@ -1,0 +1,18 @@
+kind: shared-infrastructure
+metadata:
+  description: hsdhsdh
+  name: rhsrhsd
+schema-version: v1
+spec:
+  applied-plugins:
+  - alias: plug-i-cond-var-1726598878619
+    connections:
+      generates: []
+      requires: []
+    inputs:
+      bucket_sns: alias-1
+      conta: dev
+    inputs-envs: {}
+    name: studio-jcgs/stack-aquecimento@4.1.3/plug-i-cond-var
+  repository: https://github.com/stackspot-sandbox/qa-team-julio-tests
+  stack-qualifier: studio-jcgs/stack-aquecimento@4.1.3
