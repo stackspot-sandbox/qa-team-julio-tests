@@ -1,0 +1,31 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: dsgdsgsd
+  description: gsdgsdgd
+  stack-version-id: 01J80PT0YBSH0QQJYJBMAHE4NY
+  stack: stack-aquecimento@4.1.4
+spec:
+  type: infra
+  plugins:
+    - name: studio-jcgs/stack-aquecimento@4.1.4/plug-i-ext-var@1.0.0
+      alias: plug-i-ext-var-1726600967762
+      plugin-version-id: 01J80PR1JNZB7E50F3Q8NNNE3Q
+      stack-version-id: 01J80PT0YBSH0QQJYJBMAHE4NY
+      type: infra
+      inputs:
+        multiselect_input:
+          - id2
+        alianals:
+          stk-type: required-connection
+          selected: aaajulio6agov3
+          type: aws-sns-conn
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/stackspot-sandbox/qa-team-julio-tests
