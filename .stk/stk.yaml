@@ -1,0 +1,41 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: ehrhrehreh
+  description: erherherh
+  stack-version-id: 01J80S702QV2XJ58K4ABMTNXJS
+  stack: stack-aquecimento@4.1.5
+spec:
+  type: infra
+  plugins:
+    - name: studio-jcgs/stack-aquecimento@4.1.5/plug-i-cond-global-base@1.0.0
+      alias: plug-i-cond-global-base-1726691036853
+      plugin-version-id: 01J80S3X15Q69PW49KG6MYQSMW
+      stack-version-id: 01J80S702QV2XJ58K4ABMTNXJS
+      type: infra
+      inputs:
+        resourcex: '{{var.VAR_JU_TST}}'
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+    - name: studio-jcgs/stack-aquecimento@4.1.5/plug-i-cond-global-usa-base@1.0.0
+      alias: plug-i-cond-global-usa-base-1726691036873
+      plugin-version-id: 01J80S4RAP1NCAK6A7TMJFH1NG
+      stack-version-id: 01J80S702QV2XJ58K4ABMTNXJS
+      type: infra
+      inputs:
+        resourcex: client-B
+        valorg: Client
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+  global-inputs:
+    resourcex: '{{var.VAR_JU_TST}}'
+  global-computed-inputs: {}
+  repository: https://github.com/stackspot-sandbox/qa-team-julio-tests
