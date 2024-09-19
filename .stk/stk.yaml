@@ -8,6 +8,7 @@ metadata:
   stack: stack-aquecimento@4.2.0
 spec:
   type: app
+  app-id: 01J85QYKFDX86XM76B9T7FWW40
   plugins:
     - name: studio-jcgs/stack-aquecimento@4.2.0/plug-var2v@2.0.0
       alias: plug-var2v-1726769726519
