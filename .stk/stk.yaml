@@ -1,0 +1,28 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: app-new-var-ju
+  description: testes
+  starter: studio-jcgs/stack-aquecimento@4.1.6/starter-new-var
+  stack-version-id: 01J859EHJR6V218SY8XC3EEEYK
+  stack: stack-aquecimento@4.1.6
+spec:
+  type: app
+  plugins:
+    - name: studio-jcgs/stack-aquecimento@4.1.6/plug-var2v@0.0.1
+      alias: plug-var2v-1726755015506
+      plugin-version-id: 01J8596ZFEWEG102JD8E99E57D
+      stack-version-id: 01J859EHJR6V218SY8XC3EEEYK
+      type: app
+      inputs:
+        name: julio
+        resource: '{{var.VAR_JU_TST_SV}}'
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/stackspot-sandbox/qa-team-julio-tests
