@@ -1,0 +1,17 @@
+kind: application
+metadata:
+  description: tstatatattt
+  name: aplic-ju-var2v-19set24
+schema-version: v1
+spec:
+  applied-plugins:
+  - alias: plug-var2v-1726769726519
+    connections:
+      generates: []
+      requires: []
+    inputs:
+      name: julio
+      resource: '{{ var.VAR_JU_TST_SV }}'
+    inputs-envs: {}
+    name: studio-jcgs/stack-aquecimento@4.2.0/plug-var2v
+  repository: https://github.com/stackspot-sandbox/qa-team-julio-tests
