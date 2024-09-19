@@ -1,0 +1,16 @@
+kind: application
+metadata:
+  description: testes
+  name: aplic-3-1909
+schema-version: v1
+spec:
+  applied-plugins:
+  - alias: plugin-var-qa-1726759553475
+    connections:
+      generates: []
+      requires: []
+    inputs:
+      variavel: '{{var.VAR_QA}}'
+    inputs-envs: {}
+    name: studio-usage-insights/stack-variavel@1.0.0/plugin-var-qa
+  repository: https://github.com/stackspot-sandbox/qa-team-julio-tests

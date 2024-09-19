@@ -1,0 +1,27 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: aplic-3-1909
+  description: testes
+  starter: studio-usage-insights/stack-variavel@1.0.0/starter-var-qa
+  stack-version-id: 01J85BHDA28C0R3YNM3VYFWEYB
+  stack: stack-variavel@1.0.0
+spec:
+  type: app
+  plugins:
+    - name: studio-usage-insights/stack-variavel@1.0.0/plugin-var-qa@1.0.0
+      alias: plugin-var-qa-1726759553475
+      plugin-version-id: 01J85BGHP002E8BTGKFR1MHGKY
+      stack-version-id: 01J85BHDA28C0R3YNM3VYFWEYB
+      type: app
+      inputs:
+        variavel: '{{var.VAR_QA}}'
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/stackspot-sandbox/qa-team-julio-tests
