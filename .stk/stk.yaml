@@ -8,6 +8,7 @@ metadata:
   stack: stack-variavel@1.0.0
 spec:
   type: app
+  app-id: 01J85E8BGPQGQQ962S9R71JPR5
   plugins:
     - name: studio-usage-insights/stack-variavel@1.0.0/plugin-var-qa@1.0.0
       alias: plugin-var-qa-1726759553475
