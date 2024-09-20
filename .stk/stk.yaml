@@ -1,0 +1,30 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: app-ju-20set24
+  description: testes
+  starter: studio-jcgs/stack-aquecimento@4.2.6/starter-new-var
+  stack-version-id: 01J87SD1JNTPZX2D4J95QG6RM3
+  stack: stack-aquecimento@4.2.6
+spec:
+  type: app
+  plugins:
+    - name: studio-jcgs/stack-aquecimento@4.2.6/plug-var2v@6.0.0
+      alias: plug-var2v-1726838502938
+      plugin-version-id: 01J87SBFR17D7G7JH0VJ74YMQV
+      stack-version-id: 01J87SD1JNTPZX2D4J95QG6RM3
+      type: app
+      inputs:
+        resourcecv: aparece
+        letras: Client
+        numeros: '123'
+        resource: '{{var.VAR_JU_TST_SV}}'
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/stackspot-sandbox/qa-team-julio-tests

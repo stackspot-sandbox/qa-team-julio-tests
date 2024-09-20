@@ -1,0 +1,19 @@
+kind: application
+metadata:
+  description: testes
+  name: app-ju-20set24
+schema-version: v1
+spec:
+  applied-plugins:
+  - alias: plug-var2v-1726838502938
+    connections:
+      generates: []
+      requires: []
+    inputs:
+      letras: Client
+      numeros: '123'
+      resource: '{{ var.VAR_JU_TST_SV }}'
+      resourcecv: aparece
+    inputs-envs: {}
+    name: studio-jcgs/stack-aquecimento@4.2.6/plug-var2v
+  repository: https://github.com/stackspot-sandbox/qa-team-julio-tests
