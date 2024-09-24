@@ -7,6 +7,7 @@ metadata:
   stack: stack-aquecimento@5.0.2
 spec:
   type: infra
+  infra-id: 01J8GRFP3YTHTMDGM7W5EY5VH3
   plugins:
     - name: studio-jcgs/stack-aquecimento@5.0.2/plug-i-ex-banco-case@1.0.0
       alias: plug-i-ex-banco-case-1727139312449
