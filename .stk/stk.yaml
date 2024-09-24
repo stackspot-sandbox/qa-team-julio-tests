@@ -1,0 +1,42 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: infra-test-ju-24set24
+  description: testes
+  stack-version-id: 01J8GR51YE7PCBKWS34NGNBHG0
+  stack: stack-aquecimento@5.0.3
+spec:
+  type: infra
+  plugins:
+    - name: studio-jcgs/stack-aquecimento@5.0.3/plug-i-var2v@1.0.0
+      alias: plug-i-var2v-1727198455714
+      plugin-version-id: 01J8JGJQBMK86GWC3QX8HQ4Q14
+      stack-version-id: 01J8GR51YE7PCBKWS34NGNBHG0
+      type: infra
+      inputs:
+        letras: '{{var.VAR_JU_LETRAS}}'
+        numeros: '{{var.VAR_JU_NUMEROS}}'
+        sistemaa: "não tem"
+        sistemab: "não tem"
+        sistemac: "não tem"
+        sistemad: '{{var.STK_MANIFEST_TYPE}}'
+        sistemae: '{{var.STK_PLUGIN_NAME}}'
+        sistemaf: '{{var.STK_PLUGIN_QUALIFIER}}'
+        sistemag: '{{var.STK_PLUGIN_TYPE}}'
+        sistemah: '{{var.STK_PLUGIN_VERSION}}'
+        sistemai: '{{var.STK_PROJECT_NAME}}'
+        sistemaj: '{{var.STK_STACK}}'
+        sistemak: '{{var.STK_STUDIO}}'
+        aliajuki:
+          stk-type: required-connection
+          selected: aaajulio6agov3
+          type: aws-sns-conn
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/stackspot-sandbox/qa-team-julio-tests
