@@ -1,0 +1,36 @@
+kind: shared-infrastructure
+metadata:
+  description: testes
+  name: infra-teste-noite-23set24
+schema-version: v1
+spec:
+  applied-plugins:
+  - alias: plug-i-ex-banco-case-1727139312449
+    connections:
+      generates: []
+      requires: []
+    inputs:
+      aliajuka: aaajulio6agov3
+      server_port: '8081'
+    inputs-envs: {}
+    name: studio-jcgs/stack-aquecimento@5.0.2/plug-i-ex-banco-case
+  - alias: plug-i-ex-banco-usa-case-1727139312476
+    connections:
+      generates: []
+      requires: []
+    inputs:
+      name: Julio
+    inputs-envs: {}
+    name: studio-jcgs/stack-aquecimento@5.0.2/plug-i-ex-banco-usa-case
+  - alias: plug-i-var2v-1727139312493
+    connections:
+      generates: []
+      requires: []
+    inputs:
+      aliajuki: alias-conn1-20-07-2024
+      letras: '{{var.VAR_JU_LETRAS}}'
+      numeros: '{{var.VAR_JU_NUMEROS}}'
+    inputs-envs: {}
+    name: studio-jcgs/stack-aquecimento@5.0.2/plug-i-var2v
+  repository: https://github.com/stackspot-sandbox/qa-team-julio-tests
+  stack-qualifier: studio-jcgs/stack-aquecimento@5.0.2

@@ -1,0 +1,62 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: infra-teste-noite-23set24
+  description: testes
+  stack-version-id: 01J8G57413QJXHBDKGZ6R8R6RY
+  stack: stack-aquecimento@5.0.2
+spec:
+  type: infra
+  plugins:
+    - name: studio-jcgs/stack-aquecimento@5.0.2/plug-i-ex-banco-case@1.0.0
+      alias: plug-i-ex-banco-case-1727139312449
+      plugin-version-id: 01J8G30PTQWYAS01NPM19F8EM1
+      stack-version-id: 01J8G57413QJXHBDKGZ6R8R6RY
+      type: infra
+      inputs:
+        server_port: '8081'
+        aliajuka:
+          stk-type: required-connection
+          selected: aaajulio6agov3
+          type: aws-sns-conn
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+    - name: studio-jcgs/stack-aquecimento@5.0.2/plug-i-ex-banco-usa-case@3.0.0
+      alias: plug-i-ex-banco-usa-case-1727139312476
+      plugin-version-id: 01J8G54ZP8JP8NVV4390K58MMG
+      stack-version-id: 01J8G57413QJXHBDKGZ6R8R6RY
+      type: infra
+      inputs:
+        name: Julio
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+    - name: studio-jcgs/stack-aquecimento@5.0.2/plug-i-var2v@0.0.1
+      alias: plug-i-var2v-1727139312493
+      plugin-version-id: 01J85TXFKEX04AZ775RYP3G1K1
+      stack-version-id: 01J8G57413QJXHBDKGZ6R8R6RY
+      type: infra
+      inputs:
+        letras: '{{var.VAR_JU_LETRAS}}'
+        numeros: '{{var.VAR_JU_NUMEROS}}'
+        aliajuki:
+          stk-type: required-connection
+          selected: alias-conn1-20-07-2024
+          type: aws-sns-conn
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+  global-inputs:
+    server_port: '8081'
+  global-computed-inputs: {}
+  repository: https://github.com/stackspot-sandbox/qa-team-julio-tests
