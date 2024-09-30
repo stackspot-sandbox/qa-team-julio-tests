@@ -1,0 +1,28 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: app-ju-30set24v3
+  description: teste
+  starter: studio-jcgs/stack-test-v3@3.3.11/starter-objetct-pass
+  stack-version-id: 01J91N343SKF7SG03V10CEQF4D
+  stack: stack-test-v3@3.3.11
+spec:
+  type: app
+  plugins:
+    - name: studio-jcgs/stack-test-v3@3.3.11/plug-test-computed-portal@2.0.1
+      alias: plug-test-computed-portal-1727706391953
+      plugin-version-id: 01J91MX2DNHQSFYWW9MSRTGZ4A
+      stack-version-id: 01J91N343SKF7SG03V10CEQF4D
+      type: app
+      inputs:
+        first_name: julio cezar
+        last_name: giacobbo de souza
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/stackspot-sandbox/qa-team-julio-tests
