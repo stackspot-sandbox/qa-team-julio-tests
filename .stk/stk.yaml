@@ -1,0 +1,29 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: app-ju-30set24
+  description: testes
+  starter: studio-jcgs/stack-test-v3@3.3.9/starter-objetct-pass
+  stack-version-id: 01J91D3Q8XNBS4MWPBPNRANWA5
+  stack: stack-test-v3@3.3.9
+spec:
+  type: app
+  plugins:
+    - name: studio-jcgs/stack-test-v3@3.3.9/obj-cond-ju@0.0.1
+      alias: obj-cond-ju-1727698306322
+      plugin-version-id: 01J8T5K5Z361X4KD9QW2F6T2WY
+      stack-version-id: 01J91D3Q8XNBS4MWPBPNRANWA5
+      type: app
+      inputs:
+        input_text_one: test
+        cond_obj:
+          input_text_two: test2
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/stackspot-sandbox/qa-team-julio-tests

@@ -1,0 +1,18 @@
+kind: application
+metadata:
+  description: testes
+  name: app-ju-30set24
+schema-version: v1
+spec:
+  applied-plugins:
+  - alias: obj-cond-ju-1727698306322
+    connections:
+      generates: []
+      requires: []
+    inputs:
+      cond_obj:
+        input_text_two: test2
+      input_text_one: test
+    inputs-envs: {}
+    name: studio-jcgs/stack-test-v3@3.3.9/obj-cond-ju
+  repository: https://github.com/stackspot-sandbox/qa-team-julio-tests
