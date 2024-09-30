@@ -8,6 +8,7 @@ metadata:
   stack: stack-test-v3@3.3.10
 spec:
   type: app
+  app-id: 01J91KVBCK3D423WDSH9Z6SFS8
   plugins:
     - name: studio-jcgs/stack-test-v3@3.3.10/obj-cond-ju@0.0.1
       alias: obj-cond-ju-1727704884838
