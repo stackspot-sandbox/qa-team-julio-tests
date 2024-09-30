@@ -1,0 +1,45 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: infra-ju-30set24v3
+  description: testes
+  stack-version-id: 01J91YTK81BWPFHSHEFMSF7WK1
+  stack: stack-test-v3@3.3.13
+spec:
+  type: infra
+  plugins:
+    - name: studio-jcgs/stack-test-v3@3.3.13/plug-i-ex-banco-case@2.0.0
+      alias: plug-i-ex-banco-case-1727716616550
+      plugin-version-id: 01J91YQZQJZ0FVCVZHVRCBJXSK
+      stack-version-id: 01J91YTK81BWPFHSHEFMSF7WK1
+      type: infra
+      inputs:
+        server_port: '8081'
+        aliajuka:
+          stk-type: required-connection
+          selected: aaajulio6agov3
+          type: aws-sns-conn
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+    - name: studio-jcgs/stack-test-v3@3.3.13/plug-i-ex-banco-usa-base@4.0.1
+      alias: plug-i-ex-banco-usa-base-1727716616555
+      plugin-version-id: 01J91YPHBDDFM3DD2H1G2PS5J5
+      stack-version-id: 01J91YTK81BWPFHSHEFMSF7WK1
+      type: infra
+      inputs:
+        name: Julio
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+  global-inputs:
+    server_port: '8081'
+  global-computed-inputs:
+    server_port_global_computed: '1011'
+  repository: https://github.com/stackspot-sandbox/qa-team-julio-tests
