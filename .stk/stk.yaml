@@ -7,6 +7,7 @@ metadata:
   stack: stack-test-v3@3.3.13
 spec:
   type: infra
+  infra-id: 01J91YZ9Q9MQZ9EPN246S3MC4A
   plugins:
     - name: studio-jcgs/stack-test-v3@3.3.13/plug-i-ex-banco-case@2.0.0
       alias: plug-i-ex-banco-case-1727716616550
