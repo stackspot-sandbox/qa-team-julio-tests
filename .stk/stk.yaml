@@ -1,0 +1,46 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: app-ju-30set24v2
+  description: testes
+  starter: studio-jcgs/stack-test-v3@3.3.10/starter-objetct-pass
+  stack-version-id: 01J91E9NKNNCJYH8R542WTP5WA
+  stack: stack-test-v3@3.3.10
+spec:
+  type: app
+  plugins:
+    - name: studio-jcgs/stack-test-v3@3.3.10/obj-cond-ju@0.0.1
+      alias: obj-cond-ju-1727704884838
+      plugin-version-id: 01J8T5K5Z361X4KD9QW2F6T2WY
+      stack-version-id: 01J91E9NKNNCJYH8R542WTP5WA
+      type: app
+      inputs:
+        input_text_one: teste
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+    - name: studio-jcgs/stack-test-v3@3.3.10/plug-test-computed-portal@1.0.1
+      alias: plug-test-computed-portal-1727704884843
+      plugin-version-id: 01J91E4S86ENK3TXGHNS69EJMV
+      stack-version-id: 01J91E9NKNNCJYH8R542WTP5WA
+      type: app
+      inputs:
+        first_name: julio
+        last_name: souza
+        full_name: '{{full_name_comp}}'
+        full_name_uppercase: '{{full_name_uppercase_comp}}'
+        full_name_formatted: '{{full_name_formatted_comp}}'
+        welcome_message: '{{welcome_message_comp}}'
+        goodbye_message: '{{goodbye_message_comp}}'
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/stackspot-sandbox/qa-team-julio-tests
