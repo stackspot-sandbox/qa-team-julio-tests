@@ -8,6 +8,7 @@ metadata:
   stack: stack-test-v3@3.3.11
 spec:
   type: app
+  app-id: 01J91N79NWSA3W3Z2HB6JPX1ZY
   plugins:
     - name: studio-jcgs/stack-test-v3@3.3.11/plug-test-computed-portal@2.0.1
       alias: plug-test-computed-portal-1727706391953
