@@ -1,0 +1,71 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: infra-log-env-portal
+  description: tesetse
+  stack-version-id: 01J9VZSDMTC1QX0H36ACQ0B9FJ
+  stack: stack-aquecimento@5.0.8
+spec:
+  type: infra
+  infra-id: 01J9W2C2S727DYAP3729G0Z5WJ
+  plugins:
+    - name: studio-jcgs/stack-aquecimento@5.0.8/plug-ju-env@0.0.1
+      alias: plug-ju-env-1728592515914
+      plugin-version-id: 01J9VZRNKCX8EE7A4QWH29TV6C
+      stack-version-id: 01J9VZSDMTC1QX0H36ACQ0B9FJ
+      type: infra
+      inputs:
+        name: terraform-example-queue
+        aliakiko:
+          stk-type: required-connection
+          selected: aaajulio6agov3
+          type: aws-sns-conn
+      inputs-envs:
+        message:
+          a11y: outro env
+          accessibility-test: outro env
+          amb-spa-test: outro env
+          amb-test-global: outro env
+          ambiente-teste-123: outro env
+          ambiente-teste-novo-layout: outro env
+          asdasd: outro env
+          cloud-services: outro env
+          development: outro env
+          novo: outro env
+          production: outro env
+          quality-assurance: env definido em quality-assurance
+          staging: env definido em staging
+          stg-test-env: outro env
+          technical-writer: outro env
+          teste: outro env
+          teste-ambiente-novo-layout2: outro env
+          teste11: outro env
+          tiagoteste: outro env
+        max_message_size:
+          a11y: 666
+          accessibility-test: 666
+          amb-spa-test: 666
+          amb-test-global: 666
+          ambiente-teste-123: 666
+          ambiente-teste-novo-layout: 666
+          asdasd: 666
+          cloud-services: 666
+          development: 666
+          novo: 666
+          production: 666
+          quality-assurance: 666
+          staging: 666
+          stg-test-env: 666
+          technical-writer: 666
+          teste: 666
+          teste-ambiente-novo-layout2: 666
+          teste11: 666
+          tiagoteste: 666
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/stackspot-sandbox/qa-team-julio-tests
