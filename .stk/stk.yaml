@@ -7,6 +7,7 @@ metadata:
   stack: stack-aquecimento@5.0.8
 spec:
   type: infra
+  infra-id: 01J9W2C2S727DYAP3729G0Z5WJ
   plugins:
     - name: studio-jcgs/stack-aquecimento@5.0.8/plug-ju-env@0.0.1
       alias: plug-ju-env-1728592515914
