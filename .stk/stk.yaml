@@ -1,0 +1,31 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: infra-new-input-ger-con-portal
+  description: testes
+  stack-version-id: 01J9SGZSHEHA22XXZ7T8XSFWXN
+  stack: stack-aquecimento@5.0.6
+spec:
+  type: infra
+  infra-id: 01J9VCH5YZ31G3V5XC4A9C40C9
+  plugins:
+    - name: studio-jcgs/stack-aquecimento@5.0.6/plug-ju-gen-con@1.0.0
+      alias: plug-ju-gen-con-1728569540386
+      plugin-version-id: 01J9SGRJ174NZX5VVS9V93XV49
+      stack-version-id: 01J9SGZSHEHA22XXZ7T8XSFWXN
+      type: infra
+      inputs:
+        some_sns_connection:
+          stk-type: generated-connection
+          selected: congerju10oct24
+          type: aws-sns-conn
+        topic1_name: topicdefault
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/stackspot-sandbox/qa-team-julio-tests
