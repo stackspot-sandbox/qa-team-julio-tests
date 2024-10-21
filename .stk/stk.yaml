@@ -1,0 +1,49 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: infra-ju-21out24-ger-new-req-new
+  description: testes
+  stack-version-id: 01JAQHMF8GC5NWG598GGZ3Q0SG
+  stack: stack-aquecimento@5.0.12
+spec:
+  type: infra
+  plugins:
+    - name: studio-jcgs/stack-aquecimento@5.0.12/plug-infra-ger-sns-new-input-ger-con@0.0.1
+      alias: plug-infra-ger-sns-new-input-ger-con-1729515480961
+      plugin-version-id: 01JAQHF4ZBY6DFAQ8JSHJ81ECZ
+      stack-version-id: 01JAQHMF8GC5NWG598GGZ3Q0SG
+      type: infra
+      inputs:
+        resource: Client
+        topic1_name: topicdefault
+        aliajuki:
+          stk-type: generated-connection
+          selected: conju21out24v2
+          type: aws-sns-conn
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+    - name: studio-jcgs/stack-aquecimento@5.0.12/plug-infra-requires-sns-v3@0.0.1
+      alias: plug-infra-requires-sns-v3-1729515480969
+      plugin-version-id: 01J4CX9CZJ9F6B72WHKHH36QAV
+      stack-version-id: 01JAQHMF8GC5NWG598GGZ3Q0SG
+      type: infra
+      inputs:
+        required-sns-alias:
+          stk-type: required-connection
+          selected: conju21out24v2
+          type: aws-sns-conn
+        resource: Client
+        method: GET
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/stackspot-sandbox/qa-team-julio-tests
