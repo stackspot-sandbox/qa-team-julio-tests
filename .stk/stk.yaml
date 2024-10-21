@@ -7,6 +7,7 @@ metadata:
   stack: stack-aquecimento@5.0.12
 spec:
   type: infra
+  infra-id: 01JAQJH8HC5BKPNJ7MH9S0M26G
   plugins:
     - name: studio-jcgs/stack-aquecimento@5.0.12/plug-infra-ger-sns-new-input-ger-con@0.0.1
       alias: plug-infra-ger-sns-new-input-ger-con-1729515480961
